@@ -1,6 +1,4 @@
-Aquí tienes la información estructurada de forma continua y simplificada, ideal para copiar y pegar directamente en un documento de Word o Google Docs sin interrupciones visuales.
 
----
 
 **Guía de Ejecución y Análisis del Script de Fuerza Bruta**
 
@@ -18,9 +16,6 @@ Si el programa tiene éxito, mostrará tres datos clave:
 Por ejemplo, para una palabra de 4 letras, podrías ver 456,976 intentos en menos de un segundo. Para una de 6 letras, los intentos suben a 308 millones y el tiempo puede pasar a varios minutos dependiendo de la potencia de tu PC.
 
 
-
-
-
 **3. Reflexión sobre contraseñas complejas (8+ caracteres)**
 El código proporcionado utiliza un alfabeto de 26 letras minúsculas. Si intentaras usarlo contra una contraseña de 8 caracteres que combine mayúsculas, números y símbolos, el programa se volvería extremadamente lento por las siguientes razones:
 
@@ -28,6 +23,3 @@ El código proporcionado utiliza un alfabeto de 26 letras minúsculas. Si intent
 *   **La escala del tiempo:** Mientras que una palabra de 6 letras minúsculas tiene 308 millones de combinaciones, una de 8 caracteres con símbolos tiene más de 6,000 billones de combinaciones. 
 *   **Limitación técnica:** Este código corre en un solo "hilo" del procesador. En un escenario real, una contraseña robusta de más de 10 caracteres tardaría décadas o siglos en ser descifrada por este método, lo que demuestra por qué la longitud y la variedad de caracteres son la mejor defensa en ciberseguridad.
 
----
-
-**¿Te gustaría que añada una tabla comparativa de tiempos para que la incluyas en tu documento?**
