@@ -1,0 +1,51 @@
+============================================================
+EXPLICACIÓN DEL CÓDIGO: BUSCADOR POR FUERZA BRUTA (PYTHON)
+============================================================
+
+1. PROPÓSITO GENERAL
+--------------------
+Este programa es un script de "Brute Force" (Fuerza Bruta). Su objetivo es 
+adivinar una palabra objetivo (target) probando todas las combinaciones 
+posibles de caracteres una por una hasta encontrar la correcta.
+
+2. LIBRERÍAS UTILIZADAS (IMPORTS)
+---------------------------------
+* itertools: La herramienta principal. Se usa para generar las 
+  combinaciones de letras de forma matemática y eficiente.
+* string: Proporciona conjuntos de caracteres predefinidos, como 
+  letras minúsculas (abcdef...) o dígitos (01234...).
+* time: Permite medir el tiempo exacto que tarda el proceso.
+* sys: Permite que el programa reciba datos desde la terminal/consola.
+
+3. FUNCIONAMIENTO DE 'brute_force' (EL MOTOR)
+---------------------------------------------
+Esta función recibe el objetivo y el alfabeto, y hace lo siguiente:
+A. Inicia un cronómetro y un contador de intentos.
+B. Usa un primer bucle para determinar la longitud (ej: primero busca 
+   palabras de 1 letra, luego de 2, etc.).
+C. Usa 'itertools.product' para crear combinaciones. Si el alfabeto es 
+   'ab' y la longitud es 2, generará: aa, ab, ba, bb.
+D. Une los caracteres (''.join) para formar una palabra.
+E. Compara: Si la palabra generada es igual al objetivo, se detiene y 
+   devuelve el resultado, los intentos y el tiempo.
+
+4. FUNCIONAMIENTO DE 'main' (LA INTERFAZ)
+-----------------------------------------
+Es la parte que interactúa con el usuario:
+* Define valores por defecto: El objetivo es 'gaming' y el alfabeto 
+  son letras minúsculas.
+* Flexibilidad: Permite cambiar el objetivo desde la terminal.
+  Ejemplo: "python script.py secreta"
+* Modo dígitos: Si escribes 'digits' al final, solo buscará números.
+* Resultado: Imprime en pantalla si tuvo éxito, cuántas combinaciones 
+  probó y cuántos segundos tomó.
+
+5. NOTA SOBRE COMPLEJIDAD
+-------------------------
+La fuerza bruta es un proceso "exponencial". 
+- Con 3 letras minúsculas hay 17,576 combinaciones.
+- Con 6 letras (como "gaming") hay más de 308 millones.
+A medida que la palabra es más larga, el tiempo de espera crece 
+drásticamente (la "Explosión Combinatoria").
+
+============================================================
