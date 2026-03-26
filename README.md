@@ -17,7 +17,7 @@ Si el programa tiene éxito, mostrará tres datos clave:
 *   **Tiempo:** Los segundos exactos (con decimales) que tomó el proceso. 
 Por ejemplo, para una palabra de 4 letras, podrías ver 456,976 intentos en menos de un segundo. Para una de 6 letras, los intentos suben a 308 millones y el tiempo puede pasar a varios minutos dependiendo de la potencia de tu PC.
 
-http://googleusercontent.com/image_content/115
+
 
 
 
